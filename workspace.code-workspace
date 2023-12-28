@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "forunittest",
+			"path": "."
+		}
+	],
+	"settings": {
+		"fortran.linter.modOutput": "${workspaceFolder}/mod/",
+		"fortran.fortls.directories": [
+			"${workspaceFolder}/src",
+			"${workspaceFolder}/test",
+			"${workspaceFolder}/app"
+		],
+		"julia.environmentPath": "/pvt/prj/gh/forunittest"
+	}
+}

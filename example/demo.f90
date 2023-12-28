@@ -18,7 +18,7 @@ program demo
    ! 'tol' is an optional real(rk) parameter, default value is 'tiny(0.0_rk)'
    ! 'msg' is an optional character parameter, default value is 'forunittest'
    ! Note: 'res' and 'expected' must have the same type and shape
-   call ut%check(res=1.0_rk, expected=1.0_rk, tol=1e-5_rk, msg="demo test 1") ! 'tol' is optional
-   call ut%check(res=2.0_rk, expected=1.0_rk, tol=1e-5_rk, msg="demo test 2") ! 'tol' is optional
+   call ut%check(res=1.0_rk, expected=1.0_rk, tol=1e-5_rk, msg="demo test 1")
+   call ut%check(res=2.0_rk, expected=1.0_rk, tol=1e-5_rk, msg="demo test 2")
 
 end program demo

@@ -11,7 +11,6 @@
 			"${workspaceFolder}/src",
 			"${workspaceFolder}/test",
 			"${workspaceFolder}/app"
-		],
-		"julia.environmentPath": "/pvt/prj/gh/forunittest"
+		]
 	}
 }

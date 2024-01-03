@@ -164,7 +164,7 @@ contains
    !> author: Seyed Ali Ghasemi
    subroutine unit_test_i0(this, res, expected, msg)
       class(unit_test), intent(inout) :: this
-      integer(ik), intent(in) :: res, expected
+      integer, intent(in) :: res, expected
       character(*), intent(in), optional :: msg
       logical :: condition
 
@@ -185,7 +185,7 @@ contains
    !> author: Seyed Ali Ghasemi
    subroutine unit_test_i1(this, res, expected, msg)
       class(unit_test), intent(inout) :: this
-      integer(ik), intent(in), dimension(:) :: res, expected
+      integer, intent(in), dimension(:) :: res, expected
       character(*), intent(in), optional :: msg
       logical :: condition
 
@@ -206,7 +206,7 @@ contains
    !> author: Seyed Ali Ghasemi
    subroutine unit_test_i2(this, res, expected, msg)
       class(unit_test), intent(inout) :: this
-      integer(ik), intent(in), dimension(:,:) :: res, expected
+      integer, intent(in), dimension(:,:) :: res, expected
       character(*), intent(in), optional :: msg
       logical :: condition
 

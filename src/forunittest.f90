@@ -335,16 +335,16 @@ contains
          this%msg = 'forunittest'
       end if
 
-      if (norm2(expected%re)<tiny(0.0_rk)) then
-         rel_err_re = norm2(res%re-expected%re)
+      if (norm2(real(expected,rk))<tiny(0.0_rk)) then
+         rel_err_re = norm2(real(res,rk)-real(expected,rk))
       else
-         rel_err_re = norm2(res%re-expected%re)/norm2(expected%re)
+         rel_err_re = norm2(real(res,rk)-real(expected,rk))/norm2(real(expected,rk))
       end if
 
-      if (norm2(expected%im)<tiny(0.0_rk)) then
-         rel_err_im = norm2(res%im-expected%im)
+      if (norm2(aimag(expected))<tiny(0.0_rk)) then
+         rel_err_im = norm2(aimag(res)-aimag(expected))
       else
-         rel_err_im = norm2(res%im-expected%im)/norm2(expected%im)
+         rel_err_im = norm2(aimag(res)-aimag(expected))/norm2(aimag(expected))
       end if
 
       if (present(tol)) then
@@ -374,16 +374,16 @@ contains
          this%msg = 'forunittest'
       end if
 
-      if (norm2(expected%re)<tiny(0.0_rk)) then
-         rel_err_re = norm2(res%re-expected%re)
+      if (norm2(real(expected,rk))<tiny(0.0_rk)) then
+         rel_err_re = norm2(real(res,rk)-real(expected,rk))
       else
-         rel_err_re = norm2(res%re-expected%re)/norm2(expected%re)
+         rel_err_re = norm2(real(res,rk)-real(expected,rk))/norm2(real(expected,rk))
       end if
 
-      if (norm2(expected%im)<tiny(0.0_rk)) then
-         rel_err_im = norm2(res%im-expected%im)
+      if (norm2(aimag(expected))<tiny(0.0_rk)) then
+         rel_err_im = norm2(aimag(res)-aimag(expected))
       else
-         rel_err_im = norm2(res%im-expected%im)/norm2(expected%im)
+         rel_err_im = norm2(aimag(res)-aimag(expected))/norm2(aimag(expected))
       end if
 
       if (present(tol)) then

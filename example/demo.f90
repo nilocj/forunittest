@@ -1,10 +1,7 @@
 program demo
 
-   ! Include module for data type definitions
-   use kinds
-
    ! Use 'forunittest' module to access the unit_test type
-   use forunittest, only : unit_test
+   use forunittest, only : unit_test, rk
 
    implicit none
 

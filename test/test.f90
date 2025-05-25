@@ -1,6 +1,5 @@
 program test
 
-   use kinds
    use forunittest
 
    implicit none

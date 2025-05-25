@@ -1,9 +1,9 @@
 name       = "forunittest"
-version    = "VERSION"
+version    = "0.1.0"
+license    = "BSD 3-Clause License"
 author     = "Seyed Ali Ghasemi"
 maintainer = "info@gha3mi.com"
-copyright  = "Copyright 2023, Seyed Ali Ghasemi"
-license    = "LICENSE"
+copyright  = "Copyright 2025, Seyed Ali Ghasemi"
 
 [build]
 auto-executables = false
@@ -12,7 +12,7 @@ auto-examples    = false
 module-naming    = false
 
 [install]
-library = false
+library = true
 
 [fortran]
 implicit-typing   = false
@@ -20,7 +20,6 @@ implicit-external = false
 source-form       = "free"
 
 [dependencies]
-kinds   = {git="https://github.com/gha3mi/kinds.git"}
 FACE    = {git="https://github.com/szaghi/FACE.git"}
 
 [[test]]

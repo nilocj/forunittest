@@ -1,12 +1,15 @@
 module forunittest
 
-   use kinds
+   use iso_fortran_env, only: real64, int32
 
    implicit none
 
    private
 
-   public unit_test
+   public unit_test, rk, ik
+
+   integer, parameter :: rk = real64
+   integer, parameter :: ik = int32
 
    !===============================================================================
    !> author: Seyed Ali Ghasemi

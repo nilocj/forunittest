@@ -46,7 +46,7 @@ cd forunittest
 fpm run --example demo
 ```
 
-## STATUS
+## Status
 
 <!-- STATUS:setup-fortran-conda:START -->
 <!-- STATUS:setup-fortran-conda:END -->

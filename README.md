@@ -46,6 +46,11 @@ cd forunittest
 fpm run --example demo
 ```
 
+## STATUS
+
+<!-- STATUS:setup-fortran-conda:START -->
+<!-- STATUS:setup-fortran-conda:END -->
+
 ## API documentation
 
 The most up-to-date API documentation for the main branch is available

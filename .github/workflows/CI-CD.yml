@@ -72,9 +72,9 @@ jobs:
           generate-doc-ford: true
           ford-working-directory: .
           ford-config: ford.yml
-          ford-output-directory: doc/ford
+          ford-output-directory: doc
           ford-branch: gh-pages
-          ford-target-folder: doc/ford
+          ford-target-folder: .
 
 
   status_fpm:

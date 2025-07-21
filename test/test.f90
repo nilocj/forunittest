@@ -1,6 +1,6 @@
 program test
 
-   use forunittest
+   use forunittest, only : unit_test, rk, ik
 
    implicit none
 

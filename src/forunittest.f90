@@ -46,7 +46,7 @@ contains
    !===============================================================================
    !> author: Seyed Ali Ghasemi
    subroutine print_msg(this, condition)
-      use face
+      use face, only: colorize
       class(unit_test), intent(inout) :: this
       logical, intent(in) :: condition
       integer  :: lm

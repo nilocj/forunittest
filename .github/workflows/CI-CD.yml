@@ -98,13 +98,13 @@ jobs:
         run: |
           cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_Fortran_COMPILER=${{ matrix.compiler }} -DFORUNITTEST_BUILD_TESTS=TRUE -GNinja
           cmake --build build --config Debug
-          ctest --test-dir build/test --output-on-failure
+          ctest --test-dir build/debug --output-on-failure
 
       - name: cmake test (release)
         run: |
           cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_Fortran_COMPILER=${{ matrix.compiler }} -DFORUNITTEST_BUILD_TESTS=TRUE -GNinja
           cmake --build build --config Release
-          ctest --test-dir build/test --output-on-failure
+          ctest --test-dir build/debug --output-on-failure
 
   doc_ford:
     if: ${{ github.event_name == 'push' && !contains(github.event.head_commit.message, '[skip ci]') }}

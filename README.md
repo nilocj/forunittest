@@ -67,7 +67,7 @@ To generate the API documentation for `ForUnitTest` using
 command:
 
 ```shell
-ford ford.yml
+ford README.md
 ```
 
 ## Contributing

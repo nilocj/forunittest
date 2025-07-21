@@ -94,13 +94,11 @@ options --profile release
 options test
 options --compiler ifx
 options --profile debug
-options --flag "/cpp"
 
 @windows-latest_ifx_release
 options test
 options --compiler ifx
 options --profile release
-options --flag "/cpp"
 
 @windows-latest_flang-new_debug
 options test

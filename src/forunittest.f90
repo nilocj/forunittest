@@ -89,7 +89,8 @@ contains
       if (present(tol)) then
          condition = rel_err < tol
       else
-         condition = rel_err == 0.0_rk
+         ! condition = rel_err == 0.0_rk
+         condition = abs(rel_err) < 2.0_rk*epsilon(0.0_rk)
       end if
 
       call this%print_msg(condition)
@@ -122,7 +123,8 @@ contains
       if (present(tol)) then
          condition = rel_err < tol
       else
-         condition = rel_err == 0.0_rk
+         ! condition = rel_err == 0.0_rk
+         condition = abs(rel_err) < 2.0_rk*epsilon(0.0_rk)
       end if
 
       call this%print_msg(condition)
@@ -155,7 +157,8 @@ contains
       if (present(tol)) then
          condition = rel_err < tol
       else
-         condition = rel_err == 0.0_rk
+         ! condition = rel_err == 0.0_rk
+         condition = abs(rel_err) < 2.0_rk*epsilon(0.0_rk)
       end if
 
       call this%print_msg(condition)
@@ -314,7 +317,8 @@ contains
       if (present(tol)) then
          condition = rel_err < tol
       else
-         condition = rel_err == 0.0_rk
+         ! condition = rel_err == 0.0_rk
+         condition =abs(rel_err) < 2.0_rk*epsilon(0.0_rk)
       end if
 
       call this%print_msg(condition)

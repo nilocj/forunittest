@@ -96,13 +96,13 @@ jobs:
 
       - name: cmake test (debug)
         run: |
-          cmake -S . -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_Fortran_COMPILER=${{ matrix.compiler }} -DFORUNITTEST_BUILD_TESTS=TRUE -GNinja
+          cmake -S . -B build/debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_Fortran_COMPILER=${{ matrix.compiler }} -DFORUNITTEST_BUILD_TESTS=ON -GNinja
           cmake --build build/debug --config Debug
           ctest --test-dir build/debug --output-on-failure
 
       - name: cmake test (release)
         run: |
-          cmake -S . -B build/release -DCMAKE_BUILD_TYPE=Release -DCMAKE_Fortran_COMPILER=${{ matrix.compiler }} -DFORUNITTEST_BUILD_TESTS=TRUE -GNinja
+          cmake -S . -B build/release -DCMAKE_BUILD_TYPE=Release -DCMAKE_Fortran_COMPILER=${{ matrix.compiler }} -DFORUNITTEST_BUILD_TESTS=ON -GNinja
           cmake --build build/release --config Release
           ctest --test-dir build/release --output-on-failure
 

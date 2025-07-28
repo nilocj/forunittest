@@ -1,6 +1,6 @@
 module forunittest
 
-   use iso_fortran_env, only: real64, int32
+   use iso_fortran_env, only: int32
 
    implicit none
 
@@ -8,7 +8,18 @@ module forunittest
 
    public unit_test, rk, ik
 
-   integer, parameter :: rk = real64
+#ifdef REAL32
+   integer, parameter :: rk = selected_real_kind(6)
+#elif REAL64
+   integer, parameter :: rk = selected_real_kind(15)
+#elif REALXDP
+   integer, parameter :: rk = selected_real_kind(18)
+#elif REAL128
+   integer, parameter :: rk = selected_real_kind(33)
+#else
+   integer, parameter :: rk = selected_real_kind(15)
+#endif
+
    integer, parameter :: ik = int32
 
    !===============================================================================

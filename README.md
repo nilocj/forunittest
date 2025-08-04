@@ -1,4 +1,4 @@
-[![GitHub](https://img.shields.io/badge/GitHub-ForCAD-blue.svg?style=social&logo=github)](https://github.com/gha3mi/forunittest)
+[![GitHub](https://img.shields.io/badge/GitHub-ForUnitTest-blue.svg?style=social&logo=github)](https://github.com/gha3mi/forunittest)
 [![Version](https://img.shields.io/github/v/tag/gha3mi/forunittest?label=version&sort=semver)](https://github.com/gha3mi/forunittest/releases)
 [![Documentation](https://img.shields.io/badge/ford-Documentation%20-blueviolet.svg)](https://gha3mi.github.io/forunittest/)
 [![Setup Fortran Conda CI/CD](https://github.com/gha3mi/forunittest/actions/workflows/CI-CD.yml/badge.svg?branch=main)](https://github.com/gha3mi/forunittest/actions/workflows/CI-CD.yml)

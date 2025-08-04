@@ -1,3 +1,19 @@
+## [v0.3.0](https://github.com/gha3mi/forunittest/compare/v0.2.0...v0.3.0) - 2025-08-04
+
+
+### Features
+
+* feat: add preprocessor macro support for real kind selection ([869d6f5](https://github.com/gha3mi/forunittest/commit/869d6f5657577adc0954503e9807d23a33146e88)) by [@gha3mi](https://github.com/gha3mi)
+* feat: added unit_tests derived type with summary (#5) ([c1fda45](https://github.com/gha3mi/forunittest/commit/c1fda457c74fd45b69bd8e176421cc99a3aff3f7)) by [@gha3mi](https://github.com/gha3mi)
+
+
+### Contributors
+- [@gha3mi](https://github.com/gha3mi)
+
+
+
+Full Changelog: [v0.2.0...v0.3.0](https://github.com/gha3mi/forunittest/compare/v0.2.0...v0.3.0)
+
 ## [v0.2.0](https://github.com/gha3mi/forunittest/compare/v0.1.0...v0.2.0) - 2025-07-22
 
 
@@ -40,5 +56,3 @@
 
 
 Full Changelog: [v0.1.0...v0.2.0](https://github.com/gha3mi/forunittest/compare/v0.1.0...v0.2.0)
-
-

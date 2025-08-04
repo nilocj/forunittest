@@ -1,4 +1,4 @@
-program test
+program test1
 
    use forunittest, only : unit_test, rk, ik
 
@@ -112,7 +112,7 @@ program test
    call ut%check(res=[(2.0_rk,1.0_rk),(2.0_rk,2.0_rk)], expected=[(1.0_rk,1.0_rk),(2.0_rk,2.0_rk)], msg="test 16 failed")
    call ut%check(res=[(2.0_rk,2.0_rk),(1.0_rk,1.0_rk)], expected=[(1.0_rk,1.0_rk),(2.0_rk,2.0_rk)], msg="test 16 failed")
 
-!! complex(rk) rank 2
+   !! complex(rk) rank 2
    call ut%check(res=reshape([(1.0_rk, 1.0_rk), (2.0_rk, 2.0_rk), (3.0_rk, 3.0_rk), (4.0_rk, 4.0_rk)], [2,2]),&
       expected=reshape([(1.0_rk, 1.0_rk), (2.0_rk, 2.0_rk), (3.0_rk, 3.0_rk), (4.0_rk, 4.0_rk)], [2,2]),&
       tol=1e-5_rk, msg="test 17 passed")
@@ -126,7 +126,7 @@ program test
       tol=1e-5_rk, msg="test 17 failed")
 
 
-!! complex(rk) rank 2, without tol
+   !! complex(rk) rank 2, without tol
    call ut%check(res=reshape([(1.0_rk, 1.0_rk), (2.0_rk, 2.0_rk), (3.0_rk, 3.0_rk), (4.0_rk, 4.0_rk)], [2,2]),&
       expected=reshape([(1.0_rk, 1.0_rk), (2.0_rk, 2.0_rk), (3.0_rk, 3.0_rk), (4.0_rk, 4.0_rk)], [2,2]),&
       msg="test 18 passed")
@@ -139,4 +139,4 @@ program test
       expected=reshape([(1.0_rk, 1.0_rk), (2.0_rk, 2.0_rk), (3.0_rk, 3.0_rk), (4.0_rk, 4.0_rk)], [2,2]),&
       msg="test 18 failed")
 
-end program test
+end program test1

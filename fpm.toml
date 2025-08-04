@@ -23,9 +23,19 @@ source-form       = "free"
 FACE    = {git="https://github.com/szaghi/FACE.git"}
 
 [[test]]
-name       = "test"
+name       = "test1"
 source-dir = "test"
-main       = "test.f90"
+main       = "test1.f90"
+
+[[test]]
+name       = "test2"
+source-dir = "test"
+main       = "test2.f90"
+
+[[example]]
+name       = "demo_old"
+source-dir = "example"
+main       = "demo_old.f90"
 
 [[example]]
 name       = "demo"

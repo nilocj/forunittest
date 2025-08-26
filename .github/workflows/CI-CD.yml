@@ -2,14 +2,14 @@ name: Setup Fortran Conda CI/CD
 
 on:
   push:
-    branches: [main, master, dev]
+    branches: [testci]
     paths-ignore:
       - 'README.md'
       - 'CHANGELOG.md'
       - 'VERSION'
       - 'LICENSE'
   pull_request:
-    branches: [main, master]
+    branches: [testci]
     paths-ignore:
       - 'README.md'
       - 'CHANGELOG.md'
@@ -156,8 +156,8 @@ jobs:
         with:
           update-readme-table: true
           update-readme-token: ${{ secrets.GH_PAT }}   # Update with your GitHub personal access token
-          update-readme-user-name: "Seyed Ali Ghasemi" # Update with your name
-          update-readme-user-email: "info@gha3mi.com"  # Update with your email
+          update-readme-user-name: "Valdenor Nilo de Carvalho Junior" # Update with your name
+          update-readme-user-email: "nilocj@outlook.com"  # Update with your email
 
   linter_fortitude:
     if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}

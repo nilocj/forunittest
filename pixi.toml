@@ -1,0 +1,29 @@
+[workspace]
+authors = ["Valdenor Nilo de Carvalho Junior <nilocj@outlook.com>"]
+channels = ["conda-forge"]
+name = "forunittest"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+compile = "fpm build @windows-latest_ifx_release"
+demo = "fpm run --example demo --compiler ifx"
+clean = "fpm clean --all"
+gendoc = "ford README.md"
+
+[dependencies]
+ifx_win-64 = ">=2025.2.0,<2026"
+intel-fortran-rt = ">=2025.2.0,<2026"
+dpcpp-cpp-rt = ">=2025.2.0,<2026"
+dpcpp_win-64 = ">=2025.2.0,<2026"
+intel-sycl-rt = ">=2025.2.0,<2026"
+llvm-openmp = ">=20.1.8,<21"
+fpm = ">=0.12.0,<0.13"
+graphviz = ">=13.1.2,<14"
+ford = ">=7.0.11,<8"
+
+[target.win-64.activation]
+scripts = ["setvarsifx.bat"]
+
+[pypi-dependencies]
+fortitude = ">=0.1.9.11, <0.2"

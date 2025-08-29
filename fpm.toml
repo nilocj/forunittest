@@ -1,7 +1,6 @@
 name       = "forunittest"
 version    = "VERSION"
 license    = "BSD 3-Clause License"
-author     = "Seyed Ali Ghasemi"
 maintainer = "info@gha3mi.com"
 copyright  = "Copyright 2025, Seyed Ali Ghasemi"
 
@@ -10,6 +9,9 @@ auto-executables = false
 auto-tests       = false
 auto-examples    = false
 module-naming    = false
+
+[library]
+include-dir = [ ".pixi/envs/default/opt/compiler/include/intel64"]
 
 [install]
 library = true

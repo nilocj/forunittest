@@ -3,4 +3,6 @@
 /doc
 /.vscode
 /mod
-/tmp
+/tmp# pixi environments
+.pixi/*
+!.pixi/config.toml
